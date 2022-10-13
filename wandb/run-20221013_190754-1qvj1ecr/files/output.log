@@ -1,0 +1,54 @@
+Requirement already satisfied: iterative-stratification==0.1.7 in /home/nikkokks/anaconda3/envs/py10_3/lib/python3.10/site-packages (0.1.7)
+Requirement already satisfied: numpy in /home/nikkokks/anaconda3/envs/py10_3/lib/python3.10/site-packages (from iterative-stratification==0.1.7) (1.21.6)
+Requirement already satisfied: scipy in /home/nikkokks/anaconda3/envs/py10_3/lib/python3.10/site-packages (from iterative-stratification==0.1.7) (1.8.1)
+Requirement already satisfied: scikit-learn in /home/nikkokks/anaconda3/envs/py10_3/lib/python3.10/site-packages (from iterative-stratification==0.1.7) (1.1.1)
+Requirement already satisfied: joblib>=1.0.0 in /home/nikkokks/anaconda3/envs/py10_3/lib/python3.10/site-packages (from scikit-learn->iterative-stratification==0.1.7) (1.1.0)
+Requirement already satisfied: threadpoolctl>=2.0.0 in /home/nikkokks/anaconda3/envs/py10_3/lib/python3.10/site-packages (from scikit-learn->iterative-stratification==0.1.7) (3.1.0)
+2022-10-13 19:08:05.012869: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-10-13 19:08:05.192800: E tensorflow/stream_executor/cuda/cuda_blas.cc:2981] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2022-10-13 19:08:05.811964: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
+2022-10-13 19:08:05.812056: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2022-10-13 19:08:05.812063: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+tokenizers.__version__: 0.12.1
+env: TOKENIZERS_PARALLELISM=true
+train.shape: (3911, 8)
+test.shape: (3, 2)
+submission.shape: (3, 7)
+Token indices sequence length is longer than the specified maximum sequence length for this model (569 > 512). Running this sequence through the model will result in indexing errors
+max_len: 5122
+========== fold: 0 training ==========
+DebertaConfig {
+  "_name_or_path": "microsoft/deberta-base",
+  "attention_dropout": 0.0,
+  "attention_probs_dropout_prob": 0.0,
+  "hidden_act": "gelu",
+  "hidden_dropout": 0.0,
+  "hidden_dropout_prob": 0.0,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-07,
+  "max_position_embeddings": 512,
+  "max_relative_positions": -1,
+  "model_type": "deberta",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "output_hidden_states": true,
+  "pad_token_id": 0,
+  "pooler_dropout": 0,
+  "pooler_hidden_act": "gelu",
+  "pooler_hidden_size": 768,
+  "pos_att_type": [
+    "c2p",
+    "p2c"
+  ],
+  "position_biased_input": false,
+  "relative_attention": true,
+  "transformers_version": "4.22.1",
+  "type_vocab_size": 0,
+  "vocab_size": 50265
+}
+Some weights of the model checkpoint at microsoft/deberta-base were not used when initializing DebertaModel: ['lm_predictions.lm_head.LayerNorm.weight', 'lm_predictions.lm_head.dense.bias', 'lm_predictions.lm_head.LayerNorm.bias', 'lm_predictions.lm_head.dense.weight', 'lm_predictions.lm_head.bias']
+- This IS expected if you are initializing DebertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing DebertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).

@@ -11,3 +11,11 @@ To enable them in other operations, rebuild TensorFlow with the appropriate comp
 2022-10-13 19:01:04.099207: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory
 2022-10-13 19:01:04.099285: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
 2022-10-13 19:01:04.099292: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+env: TOKENIZERS_PARALLELISM=true
+train.shape: (3911, 8)
+test.shape: (3, 2)
+submission.shape: (3, 7)
+Token indices sequence length is longer than the specified maximum sequence length for this model (569 > 512). Running this sequence through the model will result in indexing errors
+max_len: 5122
+If you want to use your W&B account, go to Add-ons -> Secrets and provide your W&B access token. Use the Label name as wandb_api.
+Get your W&B access token from here: https://wandb.ai/authorize

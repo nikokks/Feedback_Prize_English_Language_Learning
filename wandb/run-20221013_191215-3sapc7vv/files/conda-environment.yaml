@@ -227,7 +227,6 @@ dependencies:
     - iopath==0.1.10
     - ipadic==1.0.0
     - isort==4.3.21
-    - iterative-stratification==0.1.7
     - jarowinkler==1.2.0
     - jieba==0.42.1
     - jiwer==2.3.0

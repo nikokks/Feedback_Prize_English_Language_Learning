@@ -1,0 +1,23 @@
+{
+    "os": "Linux-5.15.0-48-generic-x86_64-with-debian-bullseye-sid",
+    "python": "3.6.6",
+    "heartbeatAt": "2022-10-13T17:20:42.941123",
+    "startedAt": "2022-10-13T17:20:40.015604",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_count": 1,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "model1.Deberta.train.ipynb",
+    "root": "/home/nikkokks/Desktop/github/Feedback_Prize_English_Language_Learning",
+    "git": {
+        "remote": "git@github.com:nikokks/Feedback_Prize_English_Language_Learning.git",
+        "commit": "8d2f5bec30af3d6e1f9decf6df646a85ef20ed92"
+    },
+    "email": "nicolas@graphmytech.fr",
+    "host": "nikokks",
+    "username": "nikkokks",
+    "executable": "/home/nikkokks/anaconda3/envs/rtx_3060/bin/python"
+}
